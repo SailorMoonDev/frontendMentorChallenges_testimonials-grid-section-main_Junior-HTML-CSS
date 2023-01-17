@@ -1,0 +1,198 @@
+/*FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+/* VARIABLES */
+:root {
+  --moderateViolet: hsl(263, 55%, 52%);
+  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --veryDarkBlackishBlue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(0, 0%, 81%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+/* Josh's Custom CSS Reset */
+@import "reset_styles.css";
+
+/*=================================================================================*/
+
+/*============================= MOBILE FIRST DESING =============================*/
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  background-color: var(--lightGrayishBlue);
+}
+
+.photo {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  border: solid 2px var(--white);
+  margin-right: 15px;
+}
+
+.user-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.name {
+  margin: 0;
+  color: var(--white);
+}
+
+.status {
+  margin: 0;
+  color: var(--white);
+  opacity: 50%;
+}
+
+.title {
+  font-size: 1.5em;
+  color: var(--white);
+}
+
+.testimonial {
+  color: var(--white);
+  opacity: 70%;
+  line-height: 20px;
+}
+
+.cards-container {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border-radius: 7px;
+  padding: 30px;
+  margin: 12px;
+  box-shadow: 5px 5px 30px var(--lightGray);
+}
+
+.card-violet {
+  background-color: var(--moderateViolet);
+}
+
+.card-DarkGrayishBlue {
+  background-color: var(--veryDarkGrayishBlue);
+}
+
+.card-DarkBlackishBlue {
+  background-color: var(--veryDarkBlackishBlue);
+}
+
+.card-white {
+  background-color: var(--white);
+}
+
+.card-white .testimonial,
+.card-white .title,
+.card-white .status,
+.card-white .name {
+  color: var(--veryDarkBlackishBlue);
+}
+
+.card-DarkBlackishBlue .photo {
+  border: solid 2px var(--moderateViolet);
+}
+
+.card-violet {
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 180px 0;
+}
+
+/* ---- FOOTER ---- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*=================================================================================*/
+/*                                RESPONSIVE DESING                                */
+/*=================================================================================*/
+
+/*============================= >= 1284px  ==================================*/
+
+@media only screen and (max-width: 999px) {
+    .card {
+        width: 272px; 
+      }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1439px) {
+    .cards-container {
+        margin: 130px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 24px;
+        column-gap: 24px;
+      }
+
+      .card{
+        margin: 0;
+      }
+
+      .card-1{
+        grid-column: 1 / span 2;
+      }
+
+      .card-3{
+        grid-column: 1 / 1;
+      }
+
+      .card-4{
+        grid-column: 2 / span 2;
+      }
+
+      .card-5{
+        grid-column: 1 / span 3;
+        grid-row: 3 / 3;
+      }
+
+
+}
+
+/*============================= >= 1284px  ==================================*/
+
+@media only screen and (min-width: 1440px) {
+    .cards-container {
+        margin: 130px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+      .card{
+        height: 222px;
+      }
+
+      .card-1{
+        grid-column: 1 / span 2;
+      }
+
+      .card-3{
+        grid-column: 1 / 1;
+      }
+
+      .card-4{
+        grid-column: 2 / span 2;
+      }
+
+      .card-5{
+        grid-column: 4 / 4;
+        grid-row: 1 / span 2;
+        height: 522px;
+      }
+
+
+}
