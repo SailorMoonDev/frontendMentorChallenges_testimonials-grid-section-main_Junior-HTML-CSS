@@ -31,7 +31,7 @@ Users should be able to:
 
 - Solution URL: [
 frontendMentorChallenges_testimonials-grid-section-main_Junior-HTML-CSS ](https://github.com/SailorMoonDev/frontendMentorChallenges_testimonials-grid-section-main_Junior-HTML-CSS)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://sailormoondev.github.io/frontendMentorChallenges_testimonials-grid-section-main_Junior-HTML-CSS/](https://sailormoondev.github.io/frontendMentorChallenges_testimonials-grid-section-main_Junior-HTML-CSS/)
 
 ## My process
 
