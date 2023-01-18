@@ -49,6 +49,10 @@ body {
   opacity: 50%;
 }
 
+blockquote{
+  margin: 0;
+}
+
 .title {
   font-size: 1.5em;
   color: var(--white);
@@ -61,7 +65,7 @@ body {
 }
 
 .cards-container {
-  padding: 48px 0;
+  padding: 28px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +108,7 @@ body {
 .card-violet {
   background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: 180px 0;
+  background-position: 440px 0;
 }
 
 /* ---- FOOTER ---- */
@@ -130,7 +134,7 @@ body {
 
 @media only screen and (min-width: 1000px) and (max-width: 1439px) {
     .cards-container {
-        margin: 130px;
+        margin: 50px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -166,15 +170,15 @@ body {
 
 @media only screen and (min-width: 1440px) {
     .cards-container {
-        margin: 130px;
+        margin: 80px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
       }
 
-      .card{
+      /* .card{
         height: 222px;
-      }
+      } */
 
       .card-1{
         grid-column: 1 / span 2;
